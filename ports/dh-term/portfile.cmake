@@ -1,25 +1,18 @@
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
   REPO dholmes215/dh-term
-  REF 9259d2a9ea8b2dd4f661ff7862a14c925fcf41c8
-  SHA512 d8c9c2d51894b4dd132e38774e1ea85f5c1ecba9eb450b7a01992ed72d35c5f41739b789c38a330628d0df3a01cf1f6763419d2e2fe51e5c864a90e269027143
+  REF 0a6470171d2226a859d426af580fc4bcc44da18b
+  SHA512 51774ac6913eb891746f7ec4fc4a7e6bca3cf6989740101d080df5b87fafff26320b9125a5c73cf06e5ae10e2bcd50950a6585677d7208dcf2c9de2ca2c22b6d
   HEAD_REF main
 )
 
-# vcpkg_configure_cmake(
-#   SOURCE_PATH "${SOURCE_PATH}"
-#   PREFER_NINJA
-# )
 vcpkg_cmake_configure(
     SOURCE_PATH ${SOURCE_PATH}
 )
 
 
-# vcpkg_install_cmake()
 vcpkg_cmake_install()
-# vcpkg_fixup_cmake_targets()
 vcpkg_cmake_config_fixup()
-# vcpkg_cmake_config_fixup(CONFIG_PATH share/dh-term)
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 
