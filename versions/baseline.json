@@ -1,7 +1,7 @@
 {
     "default": {
         "dh-term": {
-            "version-semver": "0.0.1",
+            "baseline": "0.0.3",
             "port-version": 0
         }
     }
