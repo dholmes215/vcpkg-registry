@@ -1,6 +1,6 @@
 {
     "name": "dh-term",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Library for vt100/xterm-style terminal features",
     "homepage": "https://github.com/dholmes215/dh-term",
     "dependencies": [
